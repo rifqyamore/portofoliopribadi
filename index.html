@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Pribadi</title>
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "WebSite",
+              "url": "-",
+              "name": "Muhamad Rifqy Al Farizi Portfolio",
+              "description": "Portofolio resmi Muhamad Rifqy Al Farizi, seorang Newbie Web Developer dan Programmer PHP dalam solusi aplikasi modern.",
+              "publisher": {
+                "@type": "Person",
+                "name": "M Holil",
+                "url": "https://kholil345.github.io/Portofolio.github.io/",
+                "sameAs": [
+                  "https://linkedin.com/in/rifqyalfarizii",
+                  "https://instagram.com/@rifqyamore"
+                ]
+              }
+            },
+            {
+              "@type": "EducationalOrganization",
+              "name": "Universitas Yatsi Madani",
+              "url": "https://universitasyatsimadani.ac.id",
+              "description": "Institusi pendidikan yang berfokus pada pengembangan teknologi dan ilmu pengetahuan.",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Jl. Pendidikan No.1",
+                "addressLocality": "Tangerang",
+                "addressRegion": "Banten",
+                "postalCode": "15111",
+                "addressCountry": "ID"
+              },
+              "sameAs": [
+                "https://facebook.com/universitasyatsimadani",
+                "https://twitter.com/universitasyatsimadani"
+              ]
+            },
+            {
+              "@type": "Person",
+              "name": "Muhamad Rifqy Al Farizi",
+              "url": "https://kholil345.github.io/Portofolio.github.io",
+              "image": "https://kholil345.github.io/Portofolio.github.io/@Kholil_349 (2).png",
+              "jobTitle": "Web Developer dan Programmer PHP",
+              "worksFor": {
+                "@type": "Organization",
+                "name": "Universitas Yatsi Madani"
+              },
+              "sameAs": [
+                "https://linkedin.com/in/rifqyalfarizi",
+                "https://instagram.com/@rifqyamore",
+              ],
+              "alumniOf": {
+                "@type": "EducationalOrganization",
+                "name": "Universitas Yatsi Madani"
+              }
+            },
+            {
+              "@type": "LocalBusiness",
+              "name": "Universitas Yatsi Madani",
+              "url": "https://universitasyatsimadani.ac.id",
+              "image": "https://universitasyatsimadani.ac.id/logo.png",
+              "description": "Pusat pendidikan tinggi di Tangerang, berkomitmen pada pengembangan teknologi dan inovasi.",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Jl. Pendidikan No.1",
+                "addressLocality": "Tangerang",
+                "addressRegion": "Banten",
+                "postalCode": "15111",
+                "addressCountry": "ID"
+              },
+              "sameAs": [
+                "https://linkedin.com/company/universitasyatsimadani",
+                "https://instagram.com/universitasyatsimadani"
+              ],
+              "telephone": "+62 21 12345678"
+            }
+          ]
+        }
+        </script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        body {
+            background: #0a0a0a;
+            color: #fff;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background: linear-gradient(45deg, #000000, #1a1a1a);
+            padding: 2rem 0;
+            border-bottom: 2px solid #00ff88;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(0, 255, 136, 0.1), transparent);
+            animation: shine 3s infinite;
+        }
+
+        @keyframes shine {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(100%); }
+        }
+
+        .profile-section {
+            display: flex;
+            align-items: center;
+            gap: 3rem;
+            margin: 2rem 0;
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(0, 255, 136, 0.1);
+        }
+
+        .profile-image {
+            width: 300px;
+            height: 300px;
+            border-radius: 15px;
+            object-fit: cover;
+            border: 2px solid #00ff88;
+            box-shadow: 0 0 20px rgba(0, 255, 136, 0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .profile-image:hover {
+            transform: scale(1.05);
+        }
+
+        .profile-content {
+            flex: 1;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: #00ff88;
+            text-shadow: 0 0 10px rgba(0, 255, 136, 0.5);
+        }
+
+        .title {
+            font-size: 1.5rem;
+            color: #888;
+            margin-bottom: 1rem;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        .skill {
+            padding: 0.5rem 1rem;
+            background: rgba(0, 255, 136, 0.1);
+            border-radius: 20px;
+            border: 1px solid #00ff88;
+            transition: all 0.3s ease;
+        }
+
+        .skill:hover {
+            background: #00ff88;
+            color: #000;
+            transform: translateY(-3px);
+        }
+
+        .education-section {
+            margin: 3rem 0;
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(0, 255, 136, 0.1);
+        }
+
+        .education-item {
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            background: rgba(0, 255, 136, 0.05);
+            border-radius: 10px;
+            border-left: 3px solid #00ff88;
+            transition: all 0.3s ease;
+        }
+
+        .education-item:hover {
+            transform: translateX(10px);
+            background: rgba(0, 255, 136, 0.1);
+        }
+
+        .education-item h3 {
+            color: #00ff88;
+            margin-bottom: 0.5rem;
+        }
+
+        .education-item .year {
+            color: #888;
+            font-size: 0.9rem;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .project-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            padding: 1.5rem;
+            border: 1px solid rgba(0, 255, 136, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+            border-color: #00ff88;
+        }
+
+        .contact {
+            text-align: center;
+            margin: 4rem 0;
+        }
+
+        .contact-button {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background: #00ff88;
+            color: #000;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .contact-button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 20px rgba(0, 255, 136, 0.5);
+        }
+
+        @media (max-width: 768px) {
+            .profile-section {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .profile-image {
+                width: 200px;
+                height: 200px;
+            }
+
+            .education-item {
+                margin-bottom: 1.5rem;
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Muhamad Rifqy Al Farizi</h1>
+            <div class="title">Newbie Web Developer & UI/UX Designer</div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="profile-section">
+            <img src="foto aing.jpg" alt="Profile Picture" class="profile-image">
+            <div class="profile-content">
+                <h2>About Me</h2>
+                <p>Saya adalah seorang newbie web developer dengan passion dalam menciptakan pengalaman digital yang menarik dan inovatif. Dengan fokus pada desain futuristik serta responsif, saya selalu berusaha mendorong batas-batas kreativitas dalam setiap proyek.</p>                
+                <section class="skills"></section>
+                <h2 class="skills-heading">Skills / Keahlian</h2>
+                <div class="skills">
+                    <span class="skill">HTML5</span>
+                    <span class="skill">CSS3</span>
+                    <span class="skill">JavaScript</span>
+                    <span class="skill">UI/UX Design</span>
+                </div>
+            </section>
+            </div>
+        </section>
+
+        <section class="education-section">
+            <h2>Riwayat Pendidikan</h2>
+            <div class="education-item">
+                <h3>Universitas Yatsi Madani</h3>
+                <p>Strata Satu Ilmu Komputer</p>
+                <div class="year">2023 - Sekarang</div>
+            </div>
+            <div class="education-item">
+                <h3>Universitas Islam Negeri Sultan Maulana Hasanuddin Banten</h3>
+                <p>Strata Satu Ekonomi Syariah</p>
+                <div class="year">2022 - 2023 (Tidak Lanjut)</div>
+            </div>
+            <div class="education-item">
+                <h3>MAN 4 Tangerang</h3>
+                <p>Jurusan IPS</p>
+                <div class="year">2017 - 2020</div>
+            </div>
+            <div class="education-item">
+                <h3>MTS Nurul Hidayah</h3>
+                <div class="year">2015 - 2017</div>
+            </div>
+            <div class="education-item">
+                <h3>SDN 1 Pasilian</h3>
+                <div class="year">2009 - 2015</div>
+            </div>
+        </section>
+
+        <section class="projects">
+            <div class="project-card">
+                <h3>Project 1</h3>
+                <p>Aplikasi web dengan teknologi terkini yang responsif serta inovatif</p>
+            </div>
+            <div class="project-card">
+                <h3>Project 2</h3>
+                <p>Belum ada</p>
+            </div>
+            <div class="project-card">
+                <h3>Project 3</h3>
+                <p>Belum ada</p>
+            </div>
+        </section>
+
+        <section class="contact">
+            <h2>Let's Work Together</h2>
+            <p>Tertarik untuk berkolaborasi atau memiliki project yang ingin didiskusikan?</p>
+            <a href="https://www.instagram.com/rifqyamore/" class="contact-button">Instagram</a>
+            <a href="https://www.linkedin.com/in/rifqyalfarizi/" class="contact-button">Linked In</a>
+            <a href="https://wa.me/62895320171471" class="contact-button">WhatsApp</a>
+        </section>
+    </main>
+</body>
+</html>
